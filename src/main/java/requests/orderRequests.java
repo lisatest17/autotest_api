@@ -22,9 +22,8 @@ public class orderRequests {
     public Response getOrder(String orderID){
         Response response = given(getRequestSpecification())
                 .contentType(ContentType.JSON)
-                .body(orderID + orderID)
                 .when()
-                .get(STORE_URL)
+                .get(STORE_URL + orderID)
                 .andReturn();
         return response;
     }
