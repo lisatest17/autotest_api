@@ -8,5 +8,5 @@ public interface urlConstants {
     public static final String PET_URL = "pet/";
 
     //store
-    public static final String STORE_URL = "store/";
+    public static final String STORE_URL = "store/order/";
 }
